@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36647204-f175-42ec-b1da-629601d0fb43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saturday.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thursday/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thursday/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/saturday/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/saturday/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +53,9 @@
       <updated>1590828285922</updated>
       <workItem from="1590828290071" duration="14141000" />
       <workItem from="1590843988853" duration="10212000" />
+      <workItem from="1590862207318" duration="1339000" />
+      <workItem from="1590863580965" duration="6511000" />
+      <workItem from="1590927003483" duration="10221000" />
     </task>
     <servers />
   </component>
@@ -66,21 +63,33 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1340" height="206" key="GridCell.Tab.0.bottom" timestamp="1590854593396">
+    <state x="579" y="171" key="FileChooserDialogImpl" timestamp="1590938521105">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1590854593396" />
-    <state width="1340" height="206" key="GridCell.Tab.0.center" timestamp="1590854593396">
+    <state x="579" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1590938521105" />
+    <state width="1557" height="206" key="GridCell.Tab.0.bottom" timestamp="1590938565535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1590854593396" />
-    <state width="1340" height="206" key="GridCell.Tab.0.left" timestamp="1590854593396">
+    <state width="1557" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1590938565535" />
+    <state width="1557" height="206" key="GridCell.Tab.0.center" timestamp="1590938565535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1590854593396" />
-    <state width="1340" height="206" key="GridCell.Tab.0.right" timestamp="1590854593396">
+    <state width="1557" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1590938565535" />
+    <state width="1557" height="206" key="GridCell.Tab.0.left" timestamp="1590938565535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1590854593396" />
+    <state width="1557" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1590938565535" />
+    <state width="1557" height="206" key="GridCell.Tab.0.right" timestamp="1590938565535">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1590938565535" />
+    <state x="182" y="50" key="new project wizard" timestamp="1590938528532">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="182" y="50" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1590938528532" />
+    <state x="436" y="195" key="run.anything.popup" timestamp="1590863219438">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="436" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1590863219438" />
   </component>
 </project>

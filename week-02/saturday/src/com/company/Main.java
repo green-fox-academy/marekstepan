@@ -493,7 +493,6 @@ public class Main {
             starLine += "*";
         }
 
-
         //    *
         //   ***
         //  *****
@@ -502,17 +501,17 @@ public class Main {
         // The pyramid should have as many lines as the number was
 
         int n = 5;
-        for (int i=0; i<n; i++)
+        for (int i=1; i<=n; i++)
         {
-            for (int j=n-i; j>1; j--) {
+            for (int j=n-i; j>=1; j--) {
                 System.out.print(" ");
             }
-            for (int j=0; j<=2*i; j++ ) {
+            for (int k=1; k<=2*i-1; k++ ) {
                 System.out.print("*");
             }
             System.out.println();
         }
-        */
+
 
         //    *
         //   ***
@@ -521,27 +520,165 @@ public class Main {
         //  *****
         //   ***
         //    *
+        int n = 11;
+        for (int i=1; i<=n/2+1; i++) {
+            for (int j=n-i; j>n/2; j--) {
+                System.out.print(" ");
+            }
+            for (int k=1; k<2*i; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = n/2+2; i<=n; i++) {
+            for (int j = 1; j < i-n/2; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 2*n-2*i+1; k>=1 ; k--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        // %%%%%%
+        // %    %
+        // %    %
+        // %    %
+        // %    %
+        // %%%%%%
+        //
         int n = 7;
-        for (int i=0; i<(n/2+1); i++)
-        {
-            for (int j=n-i; j>1; j--) {
+        for (int i = 0; i < n; i++) {
+            System.out.print("%");
+        }
+        System.out.println();
+        for (int i = 1; i < n-1; i++) {
+            System.out.print("%");
+            for (int j = 2; j < n; j++) {
                 System.out.print(" ");
             }
-            for (int j=0; j<=2*i; j++ ) {
-                System.out.print("*");
+            System.out.print("%");
+            System.out.println();
+        }
+        for (int i = 0; i <n ; i++) {
+            System.out.print("%");
+        }
+        System.out.println();
+
+
+        // %%%%%
+        // %%  %
+        // % % %
+        // %  %%
+        // %%%%%
+
+        int n = 7;
+        for (int i = 0; i < n; i++) {
+            System.out.print("%");
+        }
+        System.out.println();
+        for (int m = 2; m < n; m++) {
+            System.out.print("%");
+            for (int j = 2; j < m; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("%");
+            for (int j = n-m-1; j > 0; j--) {
+                System.out.print(" ");
+            }
+            System.out.print("%");
+            System.out.println();
+        }
+        for (int i = 0; i < n ; i++) {
+            System.out.print("%");
+        }
+        System.out.println();
+
+
+        // Write a program that stores a number, and the user has to figure it out.
+        // The user can input guesses, after each guess the program would tell one
+        // of the following:
+        //
+        // The stored number is higher
+        // The stried number is lower
+        // You found the number: 8
+        Random r=new Random();
+        int randomInt=r.nextInt(10);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a 1-digit + integer:");
+        int userInput1 = scanner.nextInt();
+        while (userInput1 != randomInt) {
+            if (userInput1 < randomInt) {
+                System.out.println("The stored number is higher. Try again:");
+                userInput1 = scanner.nextInt();
+            } else{
+                System.out.println("The stored number is lower. Try again:" );
+                userInput1 = scanner.nextInt();
+            }
+        }
+        System.out.println("You found the number: " + randomInt);
+
+
+        // Write a program that asks for a number.
+        // It would ask this many times to enter an integer,
+        // if all the integers are entered, it should print the sum and average of these
+        // integers like:
+        //
+        // Sum: 22, Average: 4.4
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many number do you want to process?");
+        System.out.println("Enter an integer:");
+        int userInput1 = scanner.nextInt();
+        int count = userInput1;
+        int sum = 0;
+        double average = 0;
+        for (int i = 1; i <= count; i++) {
+            System.out.println("Insert value number " + i + " from " + count);
+            int userInput2 = scanner.nextInt();
+            sum = sum + userInput2;
+            average = (double) sum/count;
+        }
+        System.out.println("Sum: " + sum + ", Average: " + average);
+
+
+        // % % % %
+        //  % % % %
+        // % % % %
+        //  % % % %
+        // % % % %
+        //  % % % %
+        // % % % %
+        //  % % % %
+
+        int n = 8;
+        char black = '\u2588';
+        String white = " ";
+        int count = 1;
+        for (int i = 1; i <=n ; i++) {
+            if (i%2 !=0) {
+                for (int j = 1; j <= n ; j++) {
+                    if (j%2 != 0) {
+                        System.out.print(black);
+                    } else {
+                        System.out.print(white);
+                    }
+                }
+            } else {
+                for (int j = 1; j <= n ; j++) {
+                    if (j % 2 == 0) {
+                        System.out.print(black);
+                    } else {
+                        System.out.print(white);
+                    }
+                }
             }
             System.out.println();
         }
-        for (int i=n/2; i<=n; i++)
-        {
-            for (int j=0; j<=i; j++ ) {
-                System.out.print(" ");
-            }
-            for (int j=n-i; j>1; j--) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+        */
+
+
 
     }
 }
