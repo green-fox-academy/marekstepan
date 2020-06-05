@@ -641,7 +641,7 @@ public class Main {
             average = (double) sum/count;
         }
         System.out.println("Sum: " + sum + ", Average: " + average);
-
+        */
 
         // % % % %
         //  % % % %
@@ -655,8 +655,7 @@ public class Main {
         int n = 8;
         char black = '\u2588';
         String white = " ";
-        int count = 1;
-        for (int i = 1; i <=n ; i++) {
+            for (int i = 1; i <=n ; i++) {
             if (i%2 !=0) {
                 for (int j = 1; j <= n ; j++) {
                     if (j%2 != 0) {
@@ -676,9 +675,6 @@ public class Main {
             }
             System.out.println();
         }
-        */
-
-
 
     }
 }
