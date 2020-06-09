@@ -336,7 +336,7 @@ public static void main(String... args){
         //How much does Bob pay?
         double total = 0;
         for(Map.Entry<String, Integer> entry : bob.entrySet()) {
-                total = total + entry.getValue() * shop.get(entry.getKey());
+            total = total + entry.getValue() * shop.get(entry.getKey());
         }
         System.out.println(total);
 

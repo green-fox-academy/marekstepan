@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/str_arr_hashtab.iml" filepath="$PROJECT_DIR$/str_arr_hashtab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/str_array_hashtbl.iml" filepath="$PROJECT_DIR$/str_array_hashtbl.iml" />
     </modules>
   </component>
 </project>
