@@ -5,6 +5,7 @@ import java.util.Random;
 import javax.swing.*;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
@@ -200,7 +201,7 @@ public class Main {
     //TRIANGLES drawing exercise
         // you can select the number of triangels in the first floor and the length of their side :)
         int tBaseCount = 20;
-        int tBaseLength = 30;
+        int tBaseLength = 10;
         float increment = (float) (Math.sqrt(3) / 2 * tBaseLength);
         graphics.setColor(Color.blue);
         for (int i = 0; i < tBaseCount; i++) {
