@@ -191,12 +191,10 @@ public class Main{
 public class Main{
   public static void main(String[] arcgs) {
     String sourceFilePath = "assets/duplicated-chars.txt";
-    String targetFilePath = "assets/de-duplicated-chars.txt";
-    deduplicate(sourceFilePath, targetFilePath);
+    deduplicate(sourceFilePath);
   }
-  public static void deduplicate(String sourceFilePath, String targetFilePath){
+  public static void deduplicate(String sourceFilePath){
     try {
-      List<String> deduplicatedLines = new ArrayList();
       Path path1 = Paths.get(sourceFilePath);
       List<String> copyContainer = Files.readAllLines(path1);
       for (int i = 0; i < copyContainer.size(); i++) {
@@ -214,5 +212,50 @@ public class Main{
 }
 */
 
+/*
 //REVERSED LINES
 // Create a method that decrypts reversed-lines.txt
+public class Main{
+  public static void main(String[] arcgs) {
+    String sourceFilePath = "assets/reversed-lines.txt";
+    dereverse(sourceFilePath);
+  }
+  public static void dereverse(String sourceFilePath){
+    try {
+      Path path1 = Paths.get(sourceFilePath);
+      List<String> copyContainer = Files.readAllLines(path1);
+      for (int i = 0; i < copyContainer.size(); i++) {
+        String newString = "";
+        String oldString = copyContainer.get(i);
+        for (int j = (oldString.length()-1); j >=0; j--) {
+          newString += oldString.charAt(j);
+        }
+        System.out.println(newString);
+      }
+    } catch (Exception e) {
+      System.out.println("Houston we have a problem.");
+    }
+  }
+}
+*/
+
+
+//REVERSED ORDER
+// Create a method that decrypts reversed-order.txt
+public class Main{
+  public static void main(String[] arcgs) {
+    String sourceFilePath = "assets/reversed-order.txt";
+    dereverseOrder(sourceFilePath);
+  }
+  public static void dereverseOrder(String sourceFilePath){
+    try {
+      Path path1 = Paths.get(sourceFilePath);
+      List<String> copyContainer = Files.readAllLines(path1);
+      for (int i = (copyContainer.size()-1); i >= 0 ; i--) {
+        System.out.println(copyContainer.get(i));
+      }
+    } catch (Exception e) {
+      System.out.println("Houston we have a problem.");
+    }
+  }
+}
