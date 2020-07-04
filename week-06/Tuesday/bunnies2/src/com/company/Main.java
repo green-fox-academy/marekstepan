@@ -4,17 +4,19 @@ package com.company;
 // they each have a raised foot. Recursively return the number of "ears" in the bunny
 // line 1, 2, ... n (without loops or multiplication).
 public class Main {
-
     public static void main(String[] args) {
-
-        System.out.println(bunnies2(7));
+        bunnies2(15);
     }
 
-    public static int bunnies2(int n) {
-        if (n == 1) {
-            return 2;
+    public static void bunnies2(int n) {
+        if (n < 1) {
+            return;
         }
-
-        return 
+        bunnies2(n - 1);
+        if ((n/2)*2==n) {
+            System.out.print(3 + " ");
+        } else {
+            System.out.print(2 + " ");
+        }
     }
 }

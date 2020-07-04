@@ -8,15 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(sumdigit(7392));
+        System.out.print(sumdigit(7392));
     }
 
     public static int sumdigit(int n) {
-        if (n == 0) {
-            return n;
+        if (n <= 0) {
+            return 0;
+        } else {
+            return n%10 + sumdigit(n/10);
         }
-        int sum = n%10 + sumdigit(n/10);
-        return sum;
     }
 }
 
