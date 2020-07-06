@@ -1,7 +1,6 @@
 package com.company;
 
 import com.company.Person;
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 public class Sponsor extends Person {
   public String company;
