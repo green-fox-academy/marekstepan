@@ -9,7 +9,7 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class Main {
 
     public static void mainDraw(Graphics graphics) {
-        tree(graphics, -90, 200, 550, 9);
+        tree(graphics, -90, 400, 780, 12);
     }
 
 
@@ -21,21 +21,21 @@ public class Main {
             return;
         }
 
-        int nodeX = (int) (baseX + Math.cos(Math.toRadians(branchAngle))*8*level);
-        int nodeY = (int) (baseY + Math.sin(Math.toRadians(branchAngle))*8*level);
+        int nodeX = (int) (baseX + Math.cos(Math.toRadians(branchAngle)*9*level));
+        int nodeY = (int) (baseY + Math.sin(Math.toRadians(branchAngle)*9*level));
 
         graphics.drawLine(baseX, baseY, nodeX, nodeY);
 
-        tree(graphics, branchAngle + 15, nodeX,
+        tree(graphics, branchAngle + 10, nodeX,
             nodeY, level -1);
-        tree(graphics, branchAngle - 15, nodeX,
+        tree(graphics, branchAngle - 10, nodeX,
             nodeY, level -1);
 
     }
 
     // Don't touch the code below
-    static int WIDTH = 600;
-    static int HEIGHT = 600;
+    static int WIDTH = 800;
+    static int HEIGHT = 800;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
