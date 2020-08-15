@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #daeced;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #4f696b;
+    text-align: left;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    padding: 50px;
+}
+
+label {
+    font-size: small;
+    padding-bottom: 30px;
+}
+
+#username {
+    display: block;
+    width: 300px;
+    height: 30px;
+}
+
+#username:focus {
+    outline: none !important;
+    border: 1px solid green;
+}
+
+#password {
+    display: block;
+    width: 300px;
+    height: 30px;
+}
+
+div {
+    display: flex;
+}
+
+p {
+    text-align: right;
+    font-size: x-small;
+}
+
+button {
+    background-color: #4f696b;
+    color: white;
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* add eye and email regex test
