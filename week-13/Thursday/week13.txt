@@ -1,0 +1,32 @@
+ex1/1:
+SELECT title FROM movies.movie WHERE director LIKE 'Steven Spielberg';
+
+ex1/2:
+SELECT DISTINCT year FROM movie, rating WHERE movie.mID = rating.mID 
+AND (rating.stars = 4 OR rating.stars = 5) ORDER BY movie.year;
+
+ex1/3:
+SELECT title FROM movie LEFT JOIN rating ON movie.mID = rating.mID WHERE rating.mID IS NULL;
+
+ex1/4:
+SELECT DISTINCT name FROM reviewer JOIN rating USING(rID) WHERE ratingDate IS NULL;
+
+ex1/5:
+SELECT name, title, stars, ratingDate FROM rating JOIN reviewer USING (rID) JOIN movie USING (mID)
+ORDER BY name, title, stars;
+
+ex1/6 (Lukáš):
+SELECT name, title 
+FROM (
+    SELECT p1.rID, p1.mID 
+    FROM rating p1, rating p2
+    WHERE p1.rID=p2.rID AND p1.mID=p2.mID AND p1.ratingDate<p2.ratingDate AND p1.stars<p2.stars
+) AS p
+INNER JOIN movie m ON m.mID=p.mID
+INNER JOIN reviewer r ON r.rID=p.rID;
+
+ex 1/8 (Maggie):
+SELECT title, max(stars) - min(stars) as rating_spread from movie join rating on movie.mID = rating.mID
+    group by rating.mID, title
+    order by rating_spread DESC, title ASC;
+
