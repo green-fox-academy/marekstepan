@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Check a person for being already a GF student</title>
+</head>
+<body>
+    <h1>Add New student:</h1>
+    <h3 th:text="|Current GFA student count: ${count}|"></h3>
+    <form action="/gfa/check" method="POST">
+        <input type="text" name="name">
+        <input type="submit" value="Check">
+    </form>
+    <div th:if="${name}">
+        <span th:text="${isMember} ? ${name} + ' is a crew member' : ${name} + ' is not a crew member'"></span>
+    </div>
+    <a href="/gfa">Home Page</a>
+
+</body>
+</html>

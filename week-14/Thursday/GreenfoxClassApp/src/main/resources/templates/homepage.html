@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Choose an option</h1>
+    <h3 th:text="|Current GFA student count: ${count}|"></h3>
+    <ul>
+        <li><a href="/gfa/list">List of students</a></li>
+        <li><a href="/gfa/add">Add new student</a></li>
+        <li><a href="/gfa/check">Check if a person is a GFA student</a></li>
+    </ul>
+
+</body>
+</html>

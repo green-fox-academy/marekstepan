@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Color Background</title>
+</head>
+<body th:style="|background-color: ${color}|">
+<h1> Pick a cherry! </h1>
+<ul>
+    <li><a href="./colored">Random background color</a></li>
+    <li><a th:href="@{/useful/email?email=is@this.valid}">E-mail Validator</a></li>
+    <li><a th:href="@{/useful/encode?word=marek&number=1}"]>Word Caesar Encoder</a></li>
+    <li><a th:href="@{/useful/decode?word=nbsfl&number=-1}"]>Word Caesar Decoder</a></li>
+    <li><a href="/useful">Home Page</a></li>
+</ul>
+
+</body>
+</html>
