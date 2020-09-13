@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Posts</title>
+</head>
+<body>
+    <div>
+        <a href="/submit">Submit new post</a>
+    </div><br>
+    <div>
+        <h1>Trending posts:</h1>
+    </div><br>
+    <table>
+        <tbody>
+            <tr th:each="post : ${posts}">
+                <td><a th:text="${post.getScore()}"></a></td>
+                <td><form th:action="@{'/vote/' + ${post.id}}" method="post">
+                    <button type="submit" name="vote" value="1">+</button></form></td>
+                <td><form th:action="@{'/vote/' + ${post.id}}" method="post">
+                    <button type="submit" name="vote" value="-1">-</button></form></td>
+                <td><a th:href="${post.getUrl()}" th:text="${post.getTitle()}" th:target="_blank"></a></td>
+            </tr>
+        </tbody>
+    </table> <br>
+</body>
+</html>

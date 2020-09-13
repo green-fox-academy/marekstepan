@@ -17,12 +17,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class TodoController {
 
   private final TodoServiceImpl todoService;
-  private final TodoRepository todoRepository;
 
   @Autowired
-  public TodoController(TodoServiceImpl todoService, TodoRepository todoRepository) {
+  public TodoController(TodoServiceImpl todoService) {
     this.todoService = todoService;
-    this.todoRepository = todoRepository;
   }
 
   @GetMapping(value = {"/todo/list", "/todo"})
@@ -47,7 +45,7 @@ public class TodoController {
   @PostMapping("/todo/add")
   public String saveNewTodo(@RequestParam String title) {
     todoService.add(title);
-    return "redirect:/todo";
+    return "redirect:/todo/list";
   }
 
   @GetMapping("/todo/{id}/delete")

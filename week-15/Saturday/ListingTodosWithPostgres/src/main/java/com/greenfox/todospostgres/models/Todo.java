@@ -4,14 +4,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Todo {
-  @Id @GeneratedValue(strategy = GenerationType.AUTO)
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
   long id;
   String title;
   boolean urgent = false;
   boolean done = false;
+
+  @ManyToOne
+  @JoinColumn(name = "assignee_id")
+  private Assignee assignee;
 
   public Todo(long id, String title, boolean urgent, boolean done) {
     this.id = id;
