@@ -2,7 +2,6 @@ package com.example.reddit.services;
 
 import com.example.reddit.models.Post;
 import java.util.List;
-import org.springframework.stereotype.Service;
 
 public interface PostService {
   List<Post> findAllSortedByScore();
