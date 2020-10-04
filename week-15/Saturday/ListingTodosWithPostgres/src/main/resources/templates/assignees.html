@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/todo.css">
+    <title>assignees</title>
+</head>
+<body>
+<h1>List of Assignees:</h1>
+<div>
+    <a href="/todo/assignee/add">Add new assignee</a>
+</div><br>
+<table>
+    <thead>
+    <tr>
+        <th> id </th>
+        <th> name </th>
+        <th> email </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="assignee : ${assignees}">
+        <td><span th:text="${assignee.getId()}">  </span></td>
+        <td><span th:text="${assignee.getName()}">  </span></td>
+        <td><span th:text="${assignee.getEmail()}">  </span></td>
+        <td><span> <a th:href="@{'/todo/assignee/' + ${assignee.getId()} + '/delete'}" th:text="delete"></a></span></td>
+        <td><span> <a th:href="@{'/todo/assignee/' + ${assignee.getId()} + '/edit'}" th:text="edit"></a></span></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
